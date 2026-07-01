@@ -1,24 +1,41 @@
-import java.util.Scanner;
-public class Condicional {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
     public static void main(String[] args) {
+        System.out.println("args = " + Arrays.toString(args));
+        int [] numero = {1,2,3,4};
+        double [] notas = new double[4];
+        notas[0] = 8.8;
+        notas[1] = 7.8;
+        notas[2] = 8.7;
+        notas[3] = 9.8;
 
-        Scanner leia = new Scanner(System.in);
+    String[] nome = new String[10];
+    Integer[] contas = new Integer[6];
+    double[] nts = new double[5];
+    boolean[] maiores = new boolean[4];
 
-        System.out.println("Digite altura em metros:");
-        double altura = leia.nextDouble();
+//    Integer.perseInt("1");
+//    Double.parseDouble("23");
+//    Boolean.toString();
 
-        System.out.println("Digite um peso:");
-        double peso = leia.nextDouble();
+        List<String> listaAlunos = new ArrayList<>();
+        listaAlunos.add("Arthur");
+        listaAlunos.add("pablito");
+        listaAlunos.add("beto");
+        listaAlunos.add("luan");
 
-        System.out.printf("O peso e = %.2f e a altura e = %.2f",altura , peso);
+        listaAlunos.forEach(System.out::println);
 
-        double imc = peso / Math.pow(altura, 2);
+        List<Double> listaNotas = new ArrayList<>();
+        listaNotas.add(9.5);
+        listaNotas.add(7.4);
+        listaNotas.add(8.5);
+        double soma = 0;
+        System.out.println(listaNotas.contains(9.5));
 
-        if (imc < 18.5)
-            System.out.println("Abaixo do peso:");
+    }
 
-        else if (imc >= 18.5 & imc < 25){
-            System.out.println("**Peso ideal**");
-
-        else if (imc >= 25 & imc < 30);{
-            System.out.println("**Levemente acima do peso:**");
+}

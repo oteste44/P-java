@@ -1,4 +1,4 @@
-import herança.conta;
+import heranca.conta;
 public class banco {
     public static void main(String[] args) {
         conta cc = new conta(1001,1234,"joao",100, true);
